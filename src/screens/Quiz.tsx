@@ -61,9 +61,6 @@ const Quiz: React.FC<QuizProps> = ({onQuizEnd})  => {
   if(error) {
     return <Alert severity="error">{error}</Alert>
   }
-  console.log('Current question:', questions[currentQuestionIndex]);
-  console.log(questions)
-  console.log(numberOfQuestions) 
 
   return (
     <Box mt={3} width="100%">

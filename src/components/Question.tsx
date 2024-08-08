@@ -13,9 +13,6 @@ const Question: React.FC<QuestionProps> = ({ question, onNext, onQuizEnd, isLast
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [score, setScore] = useState<number>(0);
 
-  useEffect(() => {
-    console.log(question)
-  }, [question])
 
   const handleAnswerClick = (answer: string) => {
     setSelectedAnswer(answer);
